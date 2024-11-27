@@ -32,13 +32,12 @@ The application follows these steps:
    - The sentiment is classified as either **Positive**, **Neutral**, or **Negative**.
 
 4. **Image Generation (Stable Diffusion):**
-   - If the sentiment is **Positive** or **Neutral**, the transcription is passed to the Stable Diffusion pipeline.
-   - A corresponding image is generated based on the transcription.
-   - If the sentiment is **Negative**, no image is generated.
+   - If the sentiment is **Positive** or **Neutral**, the transcription is passed to the Stable Diffusion pipeline, which generates an image based on the transcription.
+   - If the sentiment is **Negative**, no image is generated, and a warning is displayed to the user.
 
 5. **Display Results:**
    - The transcription and sentiment analysis results are displayed.
-   - If applicable, the generated image is shown.
+   - If the sentiment is **Positive** or **Neutral**, the generated image is also displayed alongside the results.
 
 ---
 
